@@ -1,10 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrophysicist Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background: linear-gradient(to bottom, #000428, #004e92);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?space,stars') no-repeat center center/cover;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border: none;
+            background: #ffdd57;
+            color: #000;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover {
+            background: #e6c144;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .about {
+            background: #001021;
+        }
+
+        .about h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #000428;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Website</h1>
-    <p>This is hosted on GitHub Pages!</p>
+    <header>
+        <h1>Dr. Star Gazer</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Exploring the Wonders of the Universe</h2>
+        <p>Welcome to my personal website! I am an astrophysicist dedicated to uncovering the mysteries of galaxies, stars, and black holes.</p>
+        <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
+    </div>
+
+    <section class="about" id="about">
+        <h3>About Me</h3>
+        <p>I have spent over a decade studying the cosmos, using cutting-edge telescopes and simulations to explore phenomena like gravitational waves and dark matter. Join me in my journey to uncover the secrets of the universe.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dr. Star Gazer. Follow me on 
+            <a href="https://twitter.com" target="_blank">Twitter</a>, 
+            <a href="https://github.com" target="_blank">GitHub</a>, and 
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>.
+        </p>
+    </footer>
 </body>
 </html>
