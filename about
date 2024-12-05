@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Istiak Akib</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #001021, #000428);
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin-top: 2rem;
+            display: inline-block;
+            font-size: 1.1rem;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+    <p>I am a doctoral candidate in the Galaxies and Stars pole of LIRA at the Paris Observatory.</p>
+    <p>This page provides an in-depth overview of their background, research, and achievements in the field.</p>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
