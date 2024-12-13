@@ -173,9 +173,10 @@
     </footer>
 
     <script>
-        function showModal(title, description) {
+        function showModal(title, description, collaborators) {
             document.getElementById('modalTitle').textContent = title;
             document.getElementById('modalDescription').textContent = description;
+            document.getElementById('modalCollaborators').textContent = collaborators;
             document.getElementById('researchModal').style.display = 'flex';
         }
 
