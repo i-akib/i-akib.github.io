@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Istiak Akib</title>
+    <title>Research - Dr. Star Gazer</title>
     <style>
         body {
             margin: 0;
@@ -41,6 +41,7 @@
             width: 300px;
             text-align: left;
             transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
         }
 
         .research-box:hover {
@@ -57,6 +58,51 @@
         .research-box p {
             font-size: 1rem;
             line-height: 1.5;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #001b2e;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .modal-content h3 {
+            color: #ffdd57;
+            margin-bottom: 1rem;
+        }
+
+        .modal-content p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .modal-content button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            background: #ffdd57;
+            color: #000;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .modal-content button:hover {
+            background: #e6c144;
         }
 
         footer {
@@ -78,40 +124,54 @@
 </head>
 <body>
     <header>
-        <h1>Research Topics - Istiak Akib</h1>
+        <h1>Research Topics - Dr. Star Gazer</h1>
     </header>
 
     <div class="research-container">
-        <div class="research-box">
+        <div class="research-box" onclick="showModal('Merger Modelling of Galaxies', 'Detailed simulations of galaxy mergers reveal insights into gravitational dynamics, starburst activities, and the formation of unique galactic structures.')">
             <h3>Merger Modelling of Galaxies</h3>
             <p>Studying the complex gravitational interactions and dynamics during galaxy mergers to understand the resulting structures and star formation rates.</p>
         </div>
-        <div class="research-box">
+        <div class="research-box" onclick="showModal('Origin of VPOS Dwarf Galaxies', 'The Vast Polar Structure (VPOS) alignment challenges standard cosmological models, providing clues about the history and formation of the Milky Way’s satellite galaxies.')">
             <h3>Origin of VPOS Dwarf Galaxies</h3>
             <p>Investigating the formation and alignment of dwarf galaxies in the Vast Polar Structure (VPOS) of the Milky Way.</p>
         </div>
-        <div class="research-box">
-            <h3>Timing Argument for the Local Group Mass</h3>
-            <p>Analyzing the rotation curve of the Milky Way to deduce the distribution and properties of dark matter in the galaxy.</p>
-        </div>
-        <div class="research-box">
+        <div class="research-box" onclick="showModal('Dark Matter from the MW Rotation Curve', 'Rotation curves derived from stellar velocities and gas dynamics uncover the dark matter halo distribution surrounding our galaxy.')">
             <h3>Dark Matter from the MW Rotation Curve</h3>
             <p>Analyzing the rotation curve of the Milky Way to deduce the distribution and properties of dark matter in the galaxy.</p>
         </div>
-        <div class="research-box">
-            <h3>Orbits of the Eccentric MW Dwarf Galaxies and High Energy Globular Clusters</h3>
-            <p>We analysed orbits of the eccentric MW dwarfs and high energy globular clusters using their Gaia DR3 proper motion under various MW mass models. With Elodie Dufaux during my M1 project, I identified some close encounters as well as potential groups/structures apart from the VPOS. During my PhD, I supervised Marceau Henry who worked the close encounter of Segue II and Coma Berenices with Sagittarius dsph to identify if Sagittarius affected the orbits and velocity dispersion of these dwarf galaxies.</p>
-            <p>Collaborators: Elodie DuFaux, Marceau Henry, Dr. Francois Hammer, Dr. Yanbin Yang </p>
+        <div class="research-box" onclick="showModal('Orbits of MW Dwarfs and Globular Clusters', 'Precise tracking of orbital paths provides insights into the interactions and evolutionary history of Milky Way satellites.')">
+            <h3>Orbits of MW Dwarfs and Globular Clusters</h3>
+            <p>Mapping and modeling the orbits of dwarf galaxies and globular clusters within the Milky Way to understand their origins and interactions.</p>
         </div>
-        <div class="research-box">
-            <h3>Polarimetric Study of Stars with Planets and Circumgalactic Disk</h3>
-            <p>As part of my bachelors research and beyond, I performed data reduction and analysis using AstroImageJ and Astropy for the polarimetric observations of ∼50 stars in the Kepler field with planets and/or circumstellar disks from RTT150 telescope with WeDoWo Polarimeter. We investigated correlation between the polarisation degree of target stars and interstellar medium (ISM), planetary & stellar parameters and polarimetric variation over time. We found excess IR-band polarisation for the KIC stars and very high IR polarisation for Kepler-444. Our findings were presented at the EAS 2022 Annual Meeting</p>
-            <p>Collaborators: Dr. Agnieszka Słowikowska, Dr. Pawel Zielinski, Gautam Paul </p>
+        <div class="research-box" onclick="showModal('Parametric Study of Stars with Circumgalactic Disk', 'Parametric models help decode the influence of circumgalactic environments on stellar formation and evolution.')">
+            <h3>Parametric Study of Stars with Circumgalactic Disk</h3>
+            <p>Exploring the properties of stars interacting with the circumgalactic medium and its role in star formation and evolution.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="researchModal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Modal Title</h3>
+            <p id="modalDescription">Modal description goes here.</p>
+            <button onclick="closeModal()">Close</button>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2024 Dr. Star Gazer. <a href="index.html">Back to Homepage</a></p>
     </footer>
+
+    <script>
+        function showModal(title, description) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
+            document.getElementById('researchModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('researchModal').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
