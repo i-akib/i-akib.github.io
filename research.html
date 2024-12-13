@@ -90,7 +90,11 @@
             font-size: 1rem;
             line-height: 1.5;
         }
-
+        .modal-content .collaborators {
+            font-style: italic;
+            margin-top: 1rem;
+            color: #ffdd57;
+        }
         .modal-content button {
             margin-top: 1rem;
             padding: 0.5rem 1rem;
@@ -128,28 +132,29 @@
     </header>
 
     <div class="research-container">
-        <div class="research-box" onclick="showModal('Merger Modelling of Galaxies', 'Detailed simulations of galaxy mergers reveal insights into gravitational dynamics, starburst activities, and the formation of unique galactic structures.')">
-            <h3>Merger Modelling of Galaxies</h3>
-            <p>Studying the complex gravitational interactions and dynamics during galaxy mergers to understand the resulting structures and star formation rates.</p>
+        <div class="research-box" onclick="showModal('Merger Modelling of Galaxies', 'We perform hydrodynamical simulation for the 9-10 Gyr old Gaia Enceladus/Sausage (GSE) merger for the MW and 2-3 Gyr old merger at Andromeda. The Andromeda Merger has now successfully reproduced the observed rotation curve','Dr. Francois Hammer, Dr. Yanbin Yang, Dr. Philippe Amram, Dr. Laurent Chemin, Dr. Gary Mamon, Dr. Jianling Wang, Dr. Yongjun Jiao, Dr. Haifeng Wang')">
+            <h3>Merger Modelling of the Local Group Galaxies</h3>
+            <p>Reproducing the observational parameters of the MW and the Andromeda galaxy (M31) by modeling their merger</p>
         </div>
-        <div class="research-box" onclick="showModal('Origin of VPOS Dwarf Galaxies', 'The Vast Polar Structure (VPOS) alignment challenges standard cosmological models, providing clues about the history and formation of the Milky Way’s satellite galaxies.')">
+        <div class="research-box" onclick="showModal('Origin of VPOS Dwarf Galaxies', 'We investigated the orbits of the VPOS dwarf galaxies to find that most of them come from a direction close to the M31. We compared the coordinates of these dwarfs with the stellar particles of the tidal tail coming from the recent merger at the M31 and find similarity in all 6D.','Collaborators: Dr. Francois Hammer, Dr. Yanbin Yang, Dr. Marcel Pawlowski, Dr Jianling Wang')">
             <h3>Origin of VPOS Dwarf Galaxies</h3>
-            <p>Investigating the formation and alignment of dwarf galaxies in the Vast Polar Structure (VPOS) of the Milky Way.</p>
+            <p>Investigating the origin of dwarf galaxies in the Vast Polar Structure (VPOS) of the Milky Way from the tidal tail ejected from the major merger at M31.</p>
         </div>
-        <div class="research-box" onclick="showModal('Origin of VPOS Dwarf Galaxies', 'The Vast Polar Structure (VPOS) alignment challenges standard cosmological models, providing clues about the history and formation of the Milky Way’s satellite galaxies.')">
+        <div class="research-box" onclick="showModal('Timing Argument for the Local Group Mass', 'Timing argument calculation of the Local Group mass differs significantly from the sum of the MW and the M31, even more so with the declining mass of these two galaxies. We showed that accounting for the major merger at M31 can reduce the timing argument mass. Since galaxies go through many more major mergers, it may explain the overall mismatch','Collaborators: Dr. Francois Hammer, Dr. Yanbin Yang')">
             <h3>Timing Argument for the Local Group Mass</h3>
-            <p>Investigating the formation and alignment of dwarf galaxies in the Vast Polar Structure (VPOS) of the Milky Way.</p>
+            <p>Investigating the timing argument calculation in the context of the major merger of the M31.</p>
         </div>
-        <div class="research-box" onclick="showModal('Dark Matter from the MW Rotation Curve', 'Rotation curves derived from stellar velocities and gas dynamics uncover the dark matter halo distribution surrounding our galaxy.')">
+        <div class="research-box" onclick="showModal('Dark Matter from the MW Rotation Curve', 'We model the dark matter distribution of the MW by fitting its Gaia DR3 rotation curve which shows a decline after ~20 kpc. We found that even the maximum dark matter content within 1-sigma probability allowed by this data is still much lower than previous estimates using the previous flat/near flat rotation curves of the MW. We also analysed the rotation curves of cosmological simulations of the MW like galaxies and the accretion history to find a low mass MW.','Collaborators: Dr. Yongjun Jiao, Dr. Francois Hammer, Dr. Yanbin Yang, Dr. Gary Mamon, Dr. Philippe Amram, Dr. Jianling Wang, Dr. Haifeng Wang')">
             <h3>Dark Matter from the MW Rotation Curve</h3>
-            <p>Analyzing the rotation curve of the Milky Way to deduce the distribution and properties of dark matter in the galaxy.</p>
+            <p>Analyzing the rotation curve of the Milky Way to deduce the distribution of the dark matter in the galaxy.</p>
         </div>
-        <div class="research-box" onclick="showModal('Orbits of MW Dwarfs and Globular Clusters', 'Precise tracking of orbital paths provides insights into the interactions and evolutionary history of Milky Way satellites.')">
-            <h3>Orbits of MW Dwarfs and Globular Clusters</h3>
+        <div class="research-box" onclick="showModal('Orbits of MW Dwarfs and Globular Clusters', 'We analysed orbits of the eccentric MW dwarfs and high energy globular clusters using their Gaia DR3 proper motion under various MW mass models. With Elodie Dufaux during my M1 project, I identified some close encounters as well as potential groups/structures apart from the VPOS. During my PhD, I supervised Marceau Henry for his M1 project on the close encounter of Segue II and Coma Berenices with Sagittarius dsph to identify if Sagittarius affected the orbits and velocity dispersion of these dwarf galaxies.','Collaborators: Elodie DuFaux, Marceau Henry, Dr. Francois Hammer, Dr. Yanbin Yang)">
+            <h3>Orbits of the Eccentric MW Dwarf Galaxies and High Energy Globular Clusters</h3>
             <p>Mapping and modeling the orbits of dwarf galaxies and globular clusters within the Milky Way to understand their origins and interactions.</p>
         </div>
-        <div class="research-box" onclick="showModal('Polariametric Study of Stars with Planets and Circumgalactic Disk', ' As part of my bachelors research and beyond, I performed data reduction and analysis using AstroImageJ and Astropy for the polarimetric observations of ∼50 stars in the Kepler field with planets and/or circumstellar disks from RTT150 telescope with WeDoWo Polarimeter. We investigated correlation between the polarisation degree of target stars and interstellar medium (ISM), planetary & stellar parameters and polarimetric variation over time. We found excess IR-band polarisation for the KIC stars and very high IR polarisation for Kepler-444. Our findings were presented at the EAS 2022 Annual Meeting. \nCollaborators: Dr. Agnieszka Słowikowska, Dr. Pawel Zielinski, Gautam Paul')">
+        <div class="research-box" onclick="showModal('Polariametric Study of Stars with Planets and Circumgalactic Disk', ' As part of my bachelors research and beyond, I performed data reduction and analysis using AstroImageJ and Astropy for the polarimetric observations of ∼50 stars in the Kepler field with planets and/or circumstellar disks from RTT150 telescope with WeDoWo Polarimeter. We investigated correlation between the polarisation degree of target stars and interstellar medium (ISM), planetary & stellar parameters and polarimetric variation over time. We found excess IR-band polarisation for the KIC stars and very high IR polarisation for Kepler-444. Our findings were presented at the EAS 2022 Annual Meeting.', 'Collaborators: Dr. Agnieszka Słowikowska, Dr. Pawel Zielinski, Gautam Paul')">
             <h3>Polariametric Study of Stars with Planets and Circumgalactic Disk</h3>
+            <p>Calculating the polarisation of Stars in the Kepler field from their polarimetric observations.</p>
         </div>
     </div>
 
